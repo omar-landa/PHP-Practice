@@ -25,4 +25,20 @@ for ($i = 0; $i < 4; $i++) {
 }
 
 
+
+/* Associative Arrays:
+Associative arrays are when you assign a keyword into
+the index of the array which is shown below. */
+
+$paper['copier'] = "Copier Paper";
+$paper['inkjet'] = "Inkjet Printer";
+$paper['laser'] = "Laser Printer";
+$paper['photo'] = "Photo Paper";
+
+echo $paper['laser']; //pulls the value "Laser Printer" from array
+
+/* Associative arrays make it easier to debug and to 
+find the value you are searching for */
+
+
 ?>
