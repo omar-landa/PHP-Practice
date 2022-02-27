@@ -69,4 +69,43 @@ echo "p2  element: " . $p2['inkjet'] . "<br>";
 
 
 
+
+
+
+
+
+
+//Multi-Dimensional Array:
+
+$products = array(
+    'paper' => array(
+        'copier' => "Copier and Multipurpse",
+        'inkjet' => "Inkjet Printers",
+        'laser' => "Laser Printers",
+        'photo' => "Photo Printers"),
+
+    'pens' => array(
+        'ball' => "Ballpoint",
+        'hilite' => "Highlighters",
+        'marker' => "Markers"),
+
+    'misc' => array(
+        'tape' => "Tape",
+        'glue' => "Adhesives",
+        'clips' => "Paperclips"
+    )
+);
+
+echo "<pre>";
+
+    foreach($products as $section => $items)
+        foreach($items as $key => $value)
+            echo "$section: \t$key\t($value)<br>";
+
+echo "</pre>";
+
+
+
+
+
 ?>
