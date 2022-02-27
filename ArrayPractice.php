@@ -108,4 +108,13 @@ echo "</pre>";
 
 
 
+
+
+//Count function - counts the number of elements in an array
+echo count($products) . "<br>";
+
+echo count($products, 1);
+
+
+
 ?>
