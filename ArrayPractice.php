@@ -26,6 +26,12 @@ for ($i = 0; $i < 4; $i++) {
 
 
 
+
+
+
+
+
+
 /* Associative Arrays:
 Associative arrays are when you assign a keyword into
 the index of the array which is shown below. */
@@ -35,10 +41,32 @@ $paper['inkjet'] = "Inkjet Printer";
 $paper['laser'] = "Laser Printer";
 $paper['photo'] = "Photo Paper";
 
-echo $paper['laser']; //pulls the value "Laser Printer" from array
+echo $paper['laser'] . "<br>" . "<br>"; //pulls the value "Laser Printer" from array
 
 /* Associative arrays make it easier to debug and to 
 find the value you are searching for */
+
+
+
+
+
+
+
+
+
+
+/* Using The Array Keyword:
+This is a faster and more compact way to create an array. */
+
+$p1 = array("Copier", "Inkjet", "Laser", "Photo");
+echo "p1 element: " . $p1[2] . "<br>";
+
+$p2 = array('copier' => "Copier and Multipurpose",
+            'inkjet' => "Inkjet Printer",
+            'laser' => "Laser Printer",
+            'photo' => "Photo Paper");
+echo "p2  element: " . $p2['inkjet'] . "<br>";
+
 
 
 ?>
